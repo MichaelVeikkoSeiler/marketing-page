@@ -9,7 +9,7 @@ export const siteConfig = {
   name: "GartenApp",
   tagline: "Euer digitales Gartenjournal",
   description:
-    "GartenApp hilft dir, deine Pflanzen im Blick zu behalten: Gießerinnerungen nach echtem Wetter, Zonen für jedes Beet und ein Foto-Journal, das den Garten über die Jahre erzählt.",
+    "GartenApp hilft dir, deine Pflanzen im Blick zu behalten: Giesserinnerungen nach echtem Wetter, Zonen für jedes Beet und ein Foto-Journal, das den Garten über die Jahre erzählt.",
   /** Ohne Slash am Ende. Wird für Metadata, Sitemap und OG-Tags genutzt. */
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://gartenapp.example",
   /** Ziel aller "Starten"-Buttons — hier die echte App-URL eintragen. */
@@ -47,7 +47,7 @@ export const features: Feature[] = [
     icon: "sprout",
     title: "Jede Pflanze mit Steckbrief",
     description:
-      "Standort, Gießrhythmus, Schnittzeitpunkt und Notizen — alles zu einer Pflanze an einem Ort statt verstreut in Notizzetteln.",
+      "Standort, Giessrhythmus, Schnittzeitpunkt und Notizen — alles zu einer Pflanze an einem Ort statt verstreut in Notizzetteln.",
     accent: "care",
   },
   {
@@ -59,16 +59,16 @@ export const features: Feature[] = [
   },
   {
     icon: "droplets",
-    title: "Gießen im richtigen Moment",
+    title: "Giessen im richtigen Moment",
     description:
-      "Ein Tipp aufs Gießkannen-Symbol, und der nächste Termin verschiebt sich automatisch. Was Aufmerksamkeit braucht, steht ganz oben.",
+      "Ein Tipp aufs Giesskannen-Symbol, und der nächste Termin verschiebt sich automatisch. Was Aufmerksamkeit braucht, steht ganz oben.",
     accent: "water",
   },
   {
     icon: "cloudSun",
     title: "Wetter, das mitdenkt",
     description:
-      "Hat es geregnet, wird die Erinnerung leiser. Kommt Frost, wird sie lauter. Die Vorhersage fließt direkt in deine Aufgaben ein.",
+      "Hat es geregnet, wird die Erinnerung leiser. Kommt Frost, wird sie lauter. Die Vorhersage fliesst direkt in deine Aufgaben ein.",
     accent: "sun",
   },
   {
@@ -96,7 +96,7 @@ export const steps = [
   {
     title: "Pflanzen hinzufügen",
     description:
-      "Per Suche oder Foto. Pflegehinweise und Gießrhythmus werden vorausgefüllt, du korrigierst nur, was abweicht.",
+      "Per Suche oder Foto. Pflegehinweise und Giessrhythmus werden vorausgefüllt, du korrigierst nur, was abweicht.",
   },
   {
     title: "Kurz reinschauen",
@@ -108,7 +108,7 @@ export const steps = [
 /**
  * ACHTUNG: Erfundene Beispieltexte als Platzhalter für das Layout.
  * Vor dem Livegang durch echte, freigegebene Zitate ersetzen oder die
- * Section entfernen — erfundene Kundenstimmen sind Wettbewerbsverstoß.
+ * Section entfernen — erfundene Kundenstimmen sind Wettbewerbsverstoss.
  */
 export const testimonials = [
   {
@@ -119,7 +119,7 @@ export const testimonials = [
   },
   {
     quote:
-      "Wir teilen uns den Garten zu viert. Endlich weiß jeder, wer zuletzt gegossen hat — ohne Gruppenchat.",
+      "Wir teilen uns den Garten zu viert. Endlich weiss jeder, wer zuletzt gegossen hat — ohne Gruppenchat.",
     name: "Tobias M.",
     role: "Gemeinschaftsgarten Nord",
   },
@@ -135,7 +135,7 @@ export const faqs = [
   {
     question: "Was kostet GartenApp?",
     answer:
-      "Der Einstieg ist kostenlos und umfasst unbegrenzt Pflanzen, Zonen und Gießerinnerungen. Kostenpflichtige Zusatzfunktionen kündigst du jederzeit zum Monatsende.",
+      "Der Einstieg ist kostenlos und umfasst unbegrenzt Pflanzen, Zonen und Giesserinnerungen. Kostenpflichtige Zusatzfunktionen kündigst du jederzeit zum Monatsende.",
   },
   {
     question: "Brauche ich einen Account?",

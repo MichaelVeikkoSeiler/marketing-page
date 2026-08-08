@@ -4,7 +4,7 @@ const tasks = [
   {
     icon: Droplets,
     label: "Tomaten 'Ochsenherz'",
-    detail: "Gießen — 3 Tage überfällig",
+    detail: "Giessen — 3 Tage überfällig",
     tone: "bg-water text-water-text",
   },
   {

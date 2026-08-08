@@ -65,7 +65,7 @@ export default function Image() {
             color: "#6b7568",
           }}
         >
-          Gießerinnerungen nach echtem Wetter · Zonen · Foto-Journal
+          Giesserinnerungen nach echtem Wetter · Zonen · Foto-Journal
         </div>
       </div>
     ),

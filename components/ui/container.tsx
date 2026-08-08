@@ -1,6 +1,6 @@
 import { cn } from "@/lib/cn";
 
-/** Einheitliche Seitenbreite und Außenabstand für alle Sections. */
+/** Einheitliche Seitenbreite und Aussenabstand für alle Sections. */
 export function Container({
   className,
   children,

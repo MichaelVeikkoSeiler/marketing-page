@@ -17,7 +17,7 @@ export default function Page() {
 
       <h2>Verantwortliche Stelle</h2>
       <p>
-        Vorname Nachname, Straße Hausnummer, PLZ Ort.
+        Vorname Nachname, Strasse Hausnummer, PLZ Ort.
         <br />
         Kontakt:{" "}
         <a href={`mailto:${siteConfig.contactEmail}`}>
@@ -49,7 +49,7 @@ export default function Page() {
       <h2>Deine Rechte</h2>
       <p>
         Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung
-        der Verarbeitung, Datenübertragbarkeit und Widerspruch. Außerdem kannst
+        der Verarbeitung, Datenübertragbarkeit und Widerspruch. Ausserdem kannst
         du dich bei einer Datenschutz-Aufsichtsbehörde beschweren.
       </p>
     </LegalPage>

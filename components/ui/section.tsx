@@ -18,7 +18,7 @@ export function Section({
   );
 }
 
-/** Kicker + Überschrift + Fließtext, zentriert über einer Section. */
+/** Kicker + Überschrift + Fliesstext, zentriert über einer Section. */
 export function SectionHeading({
   kicker,
   title,

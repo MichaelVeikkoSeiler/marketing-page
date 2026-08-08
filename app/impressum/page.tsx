@@ -15,11 +15,11 @@ export default function Page() {
         § 5 DDG ersetzen.
       </p>
 
-      <h2>Angaben gemäß § 5 DDG</h2>
+      <h2>Angaben gemäss § 5 DDG</h2>
       <p>
         Vorname Nachname
         <br />
-        Straße Hausnummer
+        Strasse Hausnummer
         <br />
         PLZ Ort
         <br />
@@ -44,7 +44,7 @@ export default function Page() {
       </p>
 
       <h2>Umsatzsteuer-Identifikationsnummer</h2>
-      <p>USt-IdNr. gemäß § 27a UStG: DE000000000</p>
+      <p>USt-IdNr. gemäss § 27a UStG: DE000000000</p>
 
       <h2>Streitschlichtung</h2>
       <p>

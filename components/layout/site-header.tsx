@@ -36,7 +36,7 @@ export function SiteHeader() {
           onClick={() => setOpen((value) => !value)}
           aria-expanded={open}
           aria-controls="mobile-nav"
-          aria-label={open ? "Menü schließen" : "Menü öffnen"}
+          aria-label={open ? "Menü schliessen" : "Menü öffnen"}
           className="grid h-10 w-10 place-items-center rounded-xl text-forest ring-1 ring-line md:hidden"
         >
           {open ? (

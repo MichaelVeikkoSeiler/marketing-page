@@ -12,7 +12,7 @@ export function SiteFooter() {
             <Logo />
             <p className="mt-4 text-sm leading-relaxed text-forest-muted">
               {siteConfig.tagline}. Gebaut für alle, die ihren Garten lieber
-              gießen als verwalten.
+              giessen als verwalten.
             </p>
           </div>
 

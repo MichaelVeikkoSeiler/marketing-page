@@ -10,6 +10,23 @@ API-Routen. Wenn eine Aufgabe danach klingt, ist sie vermutlich im falschen Repo
 
 Next.js 16 (App Router, Turbopack) · React 19 · Tailwind CSS v4 · TypeScript · Deployment auf Vercel.
 
+## Workflow: Commit & Push ohne Rückfrage
+
+**Nach jeder abgeschlossenen Änderung sofort committen und auf `origin/main` pushen —
+ohne vorher nachzufragen.** Jeder Push auf `main` löst automatisch ein neues
+Vercel-Deployment aus, das ist gewollt und der ganze Sinn dieser Regel.
+
+- Gilt für alle Änderungen in diesem Repo, unabhängig von Umfang oder Dateityp.
+- Vorher `npm run build` und `npm run lint` grün bekommen — kaputte Builds nicht
+  committen, das würde den Live-Deploy zerstören. Bei Fehlern erst fixen, dann
+  committen/pushen, nicht ungefragt überspringen.
+- Aussagekräftige Commit-Message, die beschreibt, was sich geändert hat.
+- Normale, nicht-destruktive Git-Kommandos: `git add` gezielter Dateien, `git commit`,
+  `git push`. Kein `--force`, kein `--no-verify`, kein Rewriten von Historie, kein
+  Amend bestehender (bereits gepushter) Commits.
+- Diese Regel überschreibt die sonst übliche Rückfrage vor `git push` — der Nutzer
+  hat das hier bewusst und dauerhaft freigegeben.
+
 ## Befehle
 
 ```bash
@@ -83,3 +100,7 @@ Diese Punkte sind absichtlich als Platzhalter angelegt und müssen ersetzt werde
 Vercel, ohne Sonderkonfiguration — `next build` reicht. Der Ordner war ursprünglich
 mit dem Vercel-Projekt *gartenapp* verknüpft; die Verknüpfung wurde entfernt.
 Beim ersten Deploy ein **eigenes** Projekt anlegen, sonst wird die App überschrieben.
+
+Deploys laufen automatisch über Vercels Git-Integration: Push auf `origin/main`
+(siehe „Workflow: Commit & Push" oben) → neuer Build → neuer Deploy. Kein manuelles
+`vercel deploy` nötig.

@@ -15,7 +15,7 @@ export const siteConfig = {
   /** Ziel aller "Starten"-Buttons — hier die echte App-URL eintragen. */
   appUrl: process.env.NEXT_PUBLIC_APP_URL ?? "https://app.gartenapp.example",
   locale: "de_DE",
-  contactEmail: "hallo@gartenapp.example",
+  contactEmail: "veikko@gmx.ch",
 } as const;
 
 export const mainNav = [

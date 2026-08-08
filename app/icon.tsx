@@ -1,0 +1,29 @@
+import { ImageResponse } from "next/og";
+
+export const size = { width: 32, height: 32 };
+export const contentType = "image/png";
+
+/** Favicon aus Code — spart eine Binärdatei im Repo. */
+export default function Icon() {
+  return new ImageResponse(
+    (
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          background: "#354039",
+          color: "#a8bea5",
+          fontSize: 22,
+          fontWeight: 700,
+          borderRadius: 8,
+        }}
+      >
+        G
+      </div>
+    ),
+    size,
+  );
+}

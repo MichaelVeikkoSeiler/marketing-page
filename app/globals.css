@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+/**
+ * Design-Tokens.
+ *
+ * Alles in @theme wird von Tailwind automatisch zu Utilities:
+ * --color-sage  ->  bg-sage, text-sage, border-sage, ...
+ * Neue Farbe = eine Zeile hier, keine Config-Datei nötig.
+ */
+@theme {
+  /* Flächen */
+  --color-cream: #f7f5ef;
+  --color-warm-white: #fcfbf8;
+
+  /* Marke */
+  --color-sage: #a8bea5;
+  --color-sage-dark: #7e9b7a;
+  --color-forest: #354039;
+  --color-forest-muted: #6b7568;
+  --color-line: #e4e0d4;
+
+  /* Pastell-Akzente, je Feature ein Paar aus Fläche + lesbarer Schrift */
+  --color-bloom: #e8c4d8;
+  --color-bloom-text: #8b4a6b;
+  --color-sun: #f2d48c;
+  --color-sun-text: #8a6318;
+  --color-water: #b8d4de;
+  --color-water-text: #2e5f6e;
+  --color-soil: #d4b896;
+  --color-soil-text: #7a5730;
+  --color-care: #c3d9b8;
+  --color-care-text: #3f6b38;
+
+  /* Rhythmus */
+  --radius-card: 1.25rem;
+}
+
+/* inline, damit die next/font-Variable im Utility landet statt einer Indirektion */
+@theme inline {
+  --font-sans: var(--font-quicksand);
+  --font-display: var(--font-quicksand);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Anker-Sprünge nicht unter den Sticky-Header schieben */
+  [id] {
+    scroll-margin-top: 5.5rem;
+  }
+
+  body {
+    background: var(--color-cream);
+    color: var(--color-forest);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-sage-dark);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

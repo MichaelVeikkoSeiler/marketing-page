@@ -13,7 +13,7 @@ export const siteConfig = {
   /** Ohne Slash am Ende. Wird für Metadata, Sitemap und OG-Tags genutzt. */
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://gartenapp.example",
   /** Ziel aller "Starten"-Buttons — hier die echte App-URL eintragen. */
-  appUrl: process.env.NEXT_PUBLIC_APP_URL ?? "https://app.gartenapp.example",
+  appUrl: process.env.NEXT_PUBLIC_APP_URL ?? "https://veikkosgarten.vercel.app",
   locale: "de_DE",
   contactEmail: "veikko@gmx.ch",
 } as const;
@@ -26,7 +26,7 @@ export const mainNav = [
 ] as const;
 
 export const primaryCta = {
-  label: "Kostenlos starten",
+  label: "Zu deiner WebApp",
   href: siteConfig.appUrl,
 } as const;
 

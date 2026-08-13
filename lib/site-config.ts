@@ -26,7 +26,7 @@ export const mainNav = [
 ] as const;
 
 export const primaryCta = {
-  label: "Zu deiner WebApp",
+  label: "Demo ansehen",
   href: siteConfig.appUrl,
 } as const;
 

@@ -6,10 +6,10 @@
  */
 
 export const siteConfig = {
-  name: "GartenApp",
+  name: "Seilers GartenApp",
   tagline: "Euer digitales Gartenjournal",
   description:
-    "GartenApp hilft dir, deine Pflanzen im Blick zu behalten: Giesserinnerungen nach echtem Wetter, Zonen für jedes Beet und ein Foto-Journal, das den Garten über die Jahre erzählt.",
+    "Seilers GartenApp hilft dir, deine Pflanzen im Blick zu behalten: Giesserinnerungen nach echtem Wetter, Zonen für jedes Beet und ein Foto-Journal, das den Garten über die Jahre erzählt.",
   /** Ohne Slash am Ende. Wird für Metadata, Sitemap und OG-Tags genutzt. */
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://gartenapp.example",
   /** Ziel aller "Starten"-Buttons — hier die echte App-URL eintragen. */
@@ -133,7 +133,7 @@ export const testimonials = [
 
 export const faqs = [
   {
-    question: "Was kostet GartenApp?",
+    question: "Was kostet Seilers GartenApp?",
     answer:
       "Der Einstieg ist kostenlos und umfasst unbegrenzt Pflanzen, Zonen und Giesserinnerungen. Kostenpflichtige Zusatzfunktionen kündigst du jederzeit zum Monatsende.",
   },
@@ -160,7 +160,7 @@ export const faqs = [
   {
     question: "Gibt es die App für iOS und Android?",
     answer:
-      "GartenApp läuft im Browser und lässt sich auf beiden Systemen zum Startbildschirm hinzufügen. Dedizierte Store-Apps sind in Arbeit.",
+      "Seilers GartenApp läuft im Browser und lässt sich auf beiden Systemen zum Startbildschirm hinzufügen. Dedizierte Store-Apps sind in Arbeit.",
   },
 ] as const;
 

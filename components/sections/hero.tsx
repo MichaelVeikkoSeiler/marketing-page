@@ -2,7 +2,12 @@ import { Sparkles } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { ButtonLink } from "@/components/ui/button";
 import { AppPreview } from "@/components/sections/app-preview";
-import { primaryCta, secondaryCta, siteConfig } from "@/lib/site-config";
+import {
+  heroBadge,
+  primaryCta,
+  secondaryCta,
+  siteConfig,
+} from "@/lib/site-config";
 
 export function Hero() {
   return (
@@ -15,7 +20,7 @@ export function Hero() {
         <div className="text-center lg:text-left">
           <p className="inline-flex items-center gap-2 rounded-full bg-warm-white px-4 py-1.5 text-sm font-medium text-forest-muted ring-1 ring-line">
             <Sparkles className="h-4 w-4 text-sage-dark" aria-hidden />
-            Neu: Pflanzen per Foto erkennen
+            {heroBadge}
           </p>
 
           <h1 className="mt-6 text-4xl font-bold leading-[1.1] text-forest sm:text-5xl lg:text-6xl">

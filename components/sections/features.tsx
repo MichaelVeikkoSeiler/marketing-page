@@ -2,9 +2,11 @@ import {
   Camera,
   CloudSun,
   Droplets,
+  FlaskConical,
   Map,
   ScanLine,
   Sprout,
+  Stethoscope,
 } from "lucide-react";
 import { Section, SectionHeading } from "@/components/ui/section";
 import { features, type Feature } from "@/lib/site-config";
@@ -16,6 +18,8 @@ const icons = {
   cloudSun: CloudSun,
   camera: Camera,
   scan: ScanLine,
+  stethoscope: Stethoscope,
+  flaskConical: FlaskConical,
 } as const;
 
 const accents: Record<Feature["accent"], string> = {
@@ -25,6 +29,8 @@ const accents: Record<Feature["accent"], string> = {
   sun: "bg-sun text-sun-text",
   bloom: "bg-bloom text-bloom-text",
   sage: "bg-sage text-forest",
+  clay: "bg-clay text-clay-text",
+  moss: "bg-moss text-moss-text",
 };
 
 export function Features() {
@@ -33,7 +39,7 @@ export function Features() {
       <SectionHeading
         kicker="Funktionen"
         title="Alles, was zwischen dir und einem gesunden Beet steht"
-        description="Sechs Bausteine, die zusammenarbeiten — statt sechs Apps, die es nicht tun."
+        description="Acht Bausteine, die zusammenarbeiten — statt acht Apps, die es nicht tun."
       />
 
       <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

@@ -35,11 +35,21 @@ export const secondaryCta = {
   href: "#funktionen",
 } as const;
 
+export const heroBadge = "Neu: Plant Doc — Pflanzendiagnose per Foto";
+
 export type Feature = {
-  icon: "sprout" | "map" | "droplets" | "cloudSun" | "camera" | "scan";
+  icon:
+    | "sprout"
+    | "map"
+    | "droplets"
+    | "cloudSun"
+    | "camera"
+    | "scan"
+    | "stethoscope"
+    | "flaskConical";
   title: string;
   description: string;
-  accent: "care" | "soil" | "water" | "sun" | "bloom" | "sage";
+  accent: "care" | "soil" | "water" | "sun" | "bloom" | "sage" | "clay" | "moss";
 };
 
 export const features: Feature[] = [
@@ -49,6 +59,20 @@ export const features: Feature[] = [
     description:
       "Standort, Giessrhythmus, Schnittzeitpunkt und Notizen — alles zu einer Pflanze an einem Ort statt verstreut in Notizzetteln.",
     accent: "care",
+  },
+  {
+    icon: "stethoscope",
+    title: "Plant Doc: Diagnose per Foto",
+    description:
+      "Fotografiere die betroffene Stelle: Plant Doc vergleicht die Symptome mit dem Wetter der letzten Tage, nennt die wahrscheinlichste Ursache und gibt dir Schritt für Schritt vor, was jetzt zu tun ist.",
+    accent: "clay",
+  },
+  {
+    icon: "flaskConical",
+    title: "Bodencheck je Zone",
+    description:
+      "Ein Foto vom Untergrund genügt: Der Bodencheck zeigt dir, womit du es in jeder Zone zu tun hast — die Grundlage für jede Standort- und Pflanzenwahl.",
+    accent: "moss",
   },
   {
     icon: "map",

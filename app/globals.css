@@ -30,6 +30,10 @@
   --color-soil-text: #7a5730;
   --color-care: #c3d9b8;
   --color-care-text: #3f6b38;
+  --color-clay: #e3b6a4;
+  --color-clay-text: #8a4530;
+  --color-moss: #cbd0a0;
+  --color-moss-text: #5c6b2e;
 
   /* Rhythmus */
   --radius-card: 1.25rem;

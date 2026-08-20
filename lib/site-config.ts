@@ -130,7 +130,7 @@ export const features: Feature[] = [
     icon: "brain",
     title: "Dein eigenes Garten-Quiz",
     description:
-      "Erkennst du deine eigenen Pflanzen am Foto? Das Quiz stellt dir Fragen zu deinem echten Garten statt generischem Pflanzenwissen.",
+      "10 zufällige Fragen zu deinen eigenen Pflanzen und Tieren: Fotos erkennen, lateinische Namen zuordnen, Zonen-Zugehörigkeit erraten — statt generischem Pflanzenwissen.",
     accent: "moss",
   },
 ];

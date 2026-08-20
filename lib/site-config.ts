@@ -71,7 +71,7 @@ export const features: Feature[] = [
     icon: "flaskConical",
     title: "Bodencheck je Zone",
     description:
-      "Ein Foto vom Untergrund genügt: Der Bodencheck zeigt dir, womit du es in jeder Zone zu tun hast — die Grundlage für jede Standort- und Pflanzenwahl.",
+      "Ein paar einfache Handgriffe im Garten genügen: Der geführte Bodencheck lässt dich Bodenart, Wasseraufnahme und pH-Wert direkt vor Ort testen und wertet die Ergebnisse sofort aus — die Grundlage für jede Standort- und Pflanzenwahl.",
     accent: "moss",
   },
   {

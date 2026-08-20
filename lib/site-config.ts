@@ -9,7 +9,7 @@ export const siteConfig = {
   name: "HORTTIA by Veikko",
   tagline: "lässt Wissen wachsen",
   description:
-    "HORTTIA hilft dir, deine Pflanzen im Blick zu behalten: Giesserinnerungen nach echtem Wetter, Zonen für jedes Beet und ein Foto-Journal, das den Garten über die Jahre erzählt.",
+    "HORTTIA ist deine Wissenszentrale für den Garten: Foto-Diagnose, Zonenkonflikte erkennen, Giesserinnerungen nach echtem Wetter und ein Foto-Journal für Pflanzen und Tiere.",
   /** Ohne Slash am Ende. Wird für Metadata, Sitemap und OG-Tags genutzt. */
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://marketing-page-navy.vercel.app",
   /** Ziel aller "Starten"-Buttons — hier die echte App-URL eintragen. */
@@ -46,7 +46,10 @@ export type Feature = {
     | "camera"
     | "scan"
     | "stethoscope"
-    | "flaskConical";
+    | "flaskConical"
+    | "alertTriangle"
+    | "pawPrint"
+    | "brain";
   title: string;
   description: string;
   accent: "care" | "soil" | "water" | "sun" | "bloom" | "sage" | "clay" | "moss";
@@ -99,15 +102,36 @@ export const features: Feature[] = [
     icon: "camera",
     title: "Foto-Journal über Jahre",
     description:
-      "Fotografiere dieselbe Ecke im März und im Juli. Die Galerie zeigt dir, wie sich dein Garten Saison für Saison verändert.",
+      "Fotografiere dieselbe Ecke im März und im Juli. Jedes Foto bekommt automatisch ein Datum — bei älteren Aufnahmen passt du es einfach manuell an, damit der Vergleich stimmt.",
     accent: "bloom",
   },
   {
     icon: "scan",
     title: "Pflanze erkennen per Foto",
     description:
-      "Unbekannter Sämling? Foto machen, Art bestimmen lassen und die Pflegehinweise gleich mit übernehmen.",
+      "Unbekannter Sämling? Foto machen, Art bestimmen lassen. Liegt die Erkennung daneben, korrigierst du sie manuell in Sekunden — Pflegehinweise werden automatisch nachgeladen.",
     accent: "sage",
+  },
+  {
+    icon: "alertTriangle",
+    title: "Zonen-Konflikte erkennen",
+    description:
+      "HORTTIA prüft automatisch, ob sich Pflanzen in derselben Zone um Licht, Wasser oder Platz in die Quere kommen oder der Boden nicht passt — und macht dich darauf aufmerksam, bevor es im Beet sichtbar wird.",
+    accent: "sun",
+  },
+  {
+    icon: "pawPrint",
+    title: "Auch die Tiere im Blick",
+    description:
+      "Igel, Vögel, Nützlinge: Erfasse Tiere genauso wie Pflanzen — mit Foto, Art-Erkennung und Zuordnung zu ihrer Zone.",
+    accent: "care",
+  },
+  {
+    icon: "brain",
+    title: "Dein eigenes Garten-Quiz",
+    description:
+      "Erkennst du deine eigenen Pflanzen am Foto? Das Quiz stellt dir Fragen zu deinem echten Garten statt generischem Pflanzenwissen.",
+    accent: "moss",
   },
 ];
 
@@ -118,7 +142,7 @@ export const steps = [
       "Bilde deinen Garten in wenigen Minuten ab — ein Bereich pro Beet, Balkonkasten oder Fensterbank.",
   },
   {
-    title: "Pflanzen hinzufügen",
+    title: "Pflanzen und Tiere hinzufügen",
     description:
       "Per Suche oder Foto. Pflegehinweise und Giessrhythmus werden vorausgefüllt, du korrigierst nur, was abweicht.",
   },

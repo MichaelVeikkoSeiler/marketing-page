@@ -1,9 +1,12 @@
 import {
+  AlertTriangle,
+  Brain,
   Camera,
   CloudSun,
   Droplets,
   FlaskConical,
   Map,
+  PawPrint,
   ScanLine,
   Sprout,
   Stethoscope,
@@ -20,6 +23,9 @@ const icons = {
   scan: ScanLine,
   stethoscope: Stethoscope,
   flaskConical: FlaskConical,
+  alertTriangle: AlertTriangle,
+  pawPrint: PawPrint,
+  brain: Brain,
 } as const;
 
 const accents: Record<Feature["accent"], string> = {
@@ -40,7 +46,7 @@ export function Features() {
         as="h1"
         kicker="Funktionen"
         title="Alles, was zwischen dir und einem gesunden Beet steht"
-        description="Acht Bausteine, die zusammenarbeiten — statt acht Apps, die es nicht tun."
+        description={`${features.length} Bausteine, die zusammenarbeiten — statt ${features.length} Apps, die es nicht tun.`}
       />
 
       <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

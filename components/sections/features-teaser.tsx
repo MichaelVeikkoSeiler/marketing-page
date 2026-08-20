@@ -1,26 +1,25 @@
-import { ArrowRight, Camera, Droplets, Stethoscope } from "lucide-react";
+import { AlertTriangle, ArrowRight, PawPrint, Stethoscope } from "lucide-react";
 import { Section, SectionHeading } from "@/components/ui/section";
 import { ButtonLink } from "@/components/ui/button";
 import { features } from "@/lib/site-config";
 
 const highlightIcons = {
-  droplets: Droplets,
   stethoscope: Stethoscope,
-  camera: Camera,
+  alertTriangle: AlertTriangle,
+  pawPrint: PawPrint,
 } as const;
 
 const accents: Record<string, string> = {
-  care: "bg-care text-care-text",
   clay: "bg-clay text-clay-text",
-  bloom: "bg-bloom text-bloom-text",
-  water: "bg-water text-water-text",
+  sun: "bg-sun text-sun-text",
+  care: "bg-care text-care-text",
 };
 
 /** Drei ausgewählte Funktionen als Teaser — die vollständige Liste lebt auf /features. */
 export function FeaturesTeaser() {
   const highlights = features.filter((f) =>
-    (["droplets", "stethoscope", "camera"] as const).includes(
-      f.icon as "droplets" | "stethoscope" | "camera",
+    (["stethoscope", "alertTriangle", "pawPrint"] as const).includes(
+      f.icon as "stethoscope" | "alertTriangle" | "pawPrint",
     ),
   );
 
@@ -29,7 +28,7 @@ export function FeaturesTeaser() {
       <SectionHeading
         kicker="Funktionen"
         title="Alles, was zwischen dir und einem gesunden Beet steht"
-        description="Acht Bausteine, die zusammenarbeiten — statt acht Apps, die es nicht tun."
+        description={`${features.length} Bausteine, die zusammenarbeiten — statt ${features.length} Apps, die es nicht tun.`}
       />
 
       <div className="mt-14 grid gap-6 sm:grid-cols-3">

@@ -5,7 +5,12 @@ import { faqs } from "@/lib/site-config";
 export function Faq() {
   return (
     <Section id="faq">
-      <SectionHeading kicker="FAQ" title="Häufige Fragen" />
+      <SectionHeading
+        as="h1"
+        kicker="FAQ"
+        title="Häufige Fragen"
+        description="Antworten auf die Fragen, die uns am häufigsten gestellt werden."
+      />
 
       {/* <details> statt State: aufklappbar ohne Client-Komponente */}
       <div className="mx-auto mt-14 max-w-3xl divide-y divide-line border-y border-line">

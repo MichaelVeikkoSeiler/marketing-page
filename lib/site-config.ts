@@ -6,12 +6,12 @@
  */
 
 export const siteConfig = {
-  name: "Seilers GartenApp",
-  tagline: "Euer digitales Gartenjournal",
+  name: "HORTTIA by Veikko",
+  tagline: "lässt Wissen wachsen",
   description:
-    "Seilers GartenApp hilft dir, deine Pflanzen im Blick zu behalten: Giesserinnerungen nach echtem Wetter, Zonen für jedes Beet und ein Foto-Journal, das den Garten über die Jahre erzählt.",
+    "HORTTIA hilft dir, deine Pflanzen im Blick zu behalten: Giesserinnerungen nach echtem Wetter, Zonen für jedes Beet und ein Foto-Journal, das den Garten über die Jahre erzählt.",
   /** Ohne Slash am Ende. Wird für Metadata, Sitemap und OG-Tags genutzt. */
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://gartenapp.example",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://marketing-page-navy.vercel.app",
   /** Ziel aller "Starten"-Buttons — hier die echte App-URL eintragen. */
   appUrl: process.env.NEXT_PUBLIC_APP_URL ?? "https://veikkosgarten.vercel.app",
   locale: "de_DE",
@@ -19,10 +19,10 @@ export const siteConfig = {
 } as const;
 
 export const mainNav = [
-  { label: "Funktionen", href: "#funktionen" },
-  { label: "So funktioniert's", href: "#so-gehts" },
-  { label: "Stimmen", href: "#stimmen" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Funktionen", href: "/features" },
+  { label: "So funktioniert's", href: "/#so-gehts" },
+  { label: "Stimmen", href: "/#stimmen" },
+  { label: "FAQ", href: "/faq" },
 ] as const;
 
 export const primaryCta = {
@@ -32,7 +32,7 @@ export const primaryCta = {
 
 export const secondaryCta = {
   label: "Funktionen ansehen",
-  href: "#funktionen",
+  href: "/features",
 } as const;
 
 export const heroBadge = "Neu: Plant Doc — Pflanzendiagnose per Foto";
@@ -157,7 +157,7 @@ export const testimonials = [
 
 export const faqs = [
   {
-    question: "Was kostet Seilers GartenApp?",
+    question: "Was kostet HORTTIA?",
     answer:
       "Der Einstieg ist kostenlos und umfasst unbegrenzt Pflanzen, Zonen und Giesserinnerungen. Kostenpflichtige Zusatzfunktionen kündigst du jederzeit zum Monatsende.",
   },
@@ -184,7 +184,7 @@ export const faqs = [
   {
     question: "Gibt es die App für iOS und Android?",
     answer:
-      "Seilers GartenApp läuft im Browser und lässt sich auf beiden Systemen zum Startbildschirm hinzufügen. Dedizierte Store-Apps sind in Arbeit.",
+      "HORTTIA läuft im Browser und lässt sich auf beiden Systemen zum Startbildschirm hinzufügen.",
   },
 ] as const;
 
@@ -192,9 +192,9 @@ export const footerNav = [
   {
     title: "Produkt",
     links: [
-      { label: "Funktionen", href: "#funktionen" },
-      { label: "So funktioniert's", href: "#so-gehts" },
-      { label: "FAQ", href: "#faq" },
+      { label: "Funktionen", href: "/features" },
+      { label: "So funktioniert's", href: "/#so-gehts" },
+      { label: "FAQ", href: "/faq" },
     ],
   },
   {

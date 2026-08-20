@@ -6,7 +6,8 @@ export function Testimonials() {
     <Section id="stimmen" className="bg-warm-white">
       <SectionHeading
         kicker="Stimmen"
-        title="Was Gärtnerinnen und Gärtner berichten"
+        title="So könnten Stimmen aussehen"
+        description="Konzept-Beispiel: HORTTIA ist aktuell ein privates Familienprojekt ohne aussenstehende Nutzer:innen. Diese Zitate sind fiktiv und veranschaulichen, wie echtes Feedback hier künftig aussehen könnte."
       />
 
       <div className="mt-14 grid gap-6 md:grid-cols-3">

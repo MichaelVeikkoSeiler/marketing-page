@@ -37,6 +37,7 @@ export function Features() {
   return (
     <Section id="funktionen" className="bg-warm-white">
       <SectionHeading
+        as="h1"
         kicker="Funktionen"
         title="Alles, was zwischen dir und einem gesunden Beet steht"
         description="Acht Bausteine, die zusammenarbeiten — statt acht Apps, die es nicht tun."

@@ -18,17 +18,24 @@ export function Section({
   );
 }
 
-/** Kicker + Überschrift + Fliesstext, zentriert über einer Section. */
+/**
+ * Kicker + Überschrift + Fliesstext, zentriert über einer Section.
+ * `as="h1"` auf eigenständigen Unterseiten (z.B. /features, /faq), wo diese
+ * Überschrift die einzige H1 der Seite ist — auf der Startseite bleibt es
+ * beim Default `h2`, da dort die H1 bereits im Hero steht.
+ */
 export function SectionHeading({
   kicker,
   title,
   description,
   className,
+  as: Heading = "h2",
 }: {
   kicker?: string;
   title: string;
   description?: string;
   className?: string;
+  as?: "h1" | "h2";
 }) {
   return (
     <div className={cn("mx-auto max-w-2xl text-center", className)}>
@@ -37,9 +44,9 @@ export function SectionHeading({
           {kicker}
         </p>
       ) : null}
-      <h2 className="mt-3 text-3xl font-bold text-forest sm:text-4xl">
+      <Heading className="mt-3 text-3xl font-bold text-forest sm:text-4xl">
         {title}
-      </h2>
+      </Heading>
       {description ? (
         <p className="mt-4 text-lg leading-relaxed text-forest-muted">
           {description}

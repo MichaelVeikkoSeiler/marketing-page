@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { Logo } from "@/components/layout/logo";
 import { Container } from "@/components/ui/container";
@@ -17,13 +18,13 @@ export function SiteHeader() {
 
         <nav className="hidden items-center gap-8 md:flex">
           {mainNav.map((item) => (
-            <a
+            <Link
               key={item.href}
               href={item.href}
               className="text-sm font-medium text-forest-muted transition-colors hover:text-forest"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -51,14 +52,14 @@ export function SiteHeader() {
         <div id="mobile-nav" className="border-t border-line bg-cream md:hidden">
           <Container className="flex flex-col gap-1 py-4">
             {mainNav.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
                 className="rounded-xl px-3 py-2.5 text-base font-medium text-forest hover:bg-warm-white"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
             <ButtonLink
               href={primaryCta.href}

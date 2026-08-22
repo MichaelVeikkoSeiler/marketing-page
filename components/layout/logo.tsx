@@ -1,5 +1,5 @@
+import Image from "next/image";
 import Link from "next/link";
-import { Leaf } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 
 export function Logo() {
@@ -8,9 +8,14 @@ export function Logo() {
       href="/"
       className="flex items-center gap-2 font-display text-lg font-bold text-forest"
     >
-      <span className="grid h-9 w-9 place-items-center rounded-xl bg-sage text-forest">
-        <Leaf className="h-5 w-5" aria-hidden />
-      </span>
+      <Image
+        src="/logo.png"
+        alt=""
+        width={36}
+        height={36}
+        className="h-9 w-9 rounded-xl"
+        priority
+      />
       {siteConfig.name}
     </Link>
   );

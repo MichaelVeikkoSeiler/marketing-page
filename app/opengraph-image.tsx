@@ -1,9 +1,15 @@
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { ImageResponse } from "next/og";
 import { siteConfig } from "@/lib/site-config";
 
 export const alt = `${siteConfig.name} — ${siteConfig.tagline}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
+
+const logoDataUrl = `data:image/png;base64,${readFileSync(
+  join(process.cwd(), "app/icon.png"),
+).toString("base64")}`;
 
 /**
  * Vorschaubild beim Teilen (WhatsApp, Slack, LinkedIn, ...).
@@ -34,13 +40,12 @@ export default function Image() {
             color: "#7e9b7a",
           }}
         >
-          <div
-            style={{
-              width: 56,
-              height: 56,
-              borderRadius: 18,
-              background: "#a8bea5",
-            }}
+          <img
+            src={logoDataUrl}
+            width={56}
+            height={56}
+            style={{ borderRadius: 18 }}
+            alt=""
           />
           {siteConfig.name}
         </div>
@@ -48,24 +53,24 @@ export default function Image() {
         <div
           style={{
             marginTop: 40,
-            fontSize: 82,
+            fontSize: 76,
             fontWeight: 700,
             lineHeight: 1.1,
             letterSpacing: "-0.03em",
             color: "#354039",
           }}
         >
-          Dein Garten, endlich im Überblick
+          {siteConfig.tagline}
         </div>
 
         <div
           style={{
             marginTop: 28,
-            fontSize: 34,
+            fontSize: 32,
             color: "#6b7568",
           }}
         >
-          Giesserinnerungen nach echtem Wetter · Zonen · Foto-Journal
+          Foto-Diagnose · Zonenkonflikte · Wetterbasierte Giesserinnerungen
         </div>
       </div>
     ),

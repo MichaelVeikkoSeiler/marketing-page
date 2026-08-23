@@ -1,5 +1,6 @@
 import { Hero } from "@/components/sections/hero";
 import { Features } from "@/components/sections/features";
+import { AppShowcase } from "@/components/sections/app-showcase";
 import { HowItWorks } from "@/components/sections/how-it-works";
 import { Testimonials } from "@/components/sections/testimonials";
 import { Cta } from "@/components/sections/cta";
@@ -30,6 +31,7 @@ export default function Page() {
       />
       <Hero />
       <Features />
+      <AppShowcase />
       <HowItWorks />
       <Testimonials />
       <Cta />

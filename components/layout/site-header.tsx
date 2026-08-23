@@ -28,12 +28,6 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
-          <ButtonLink href={primaryCta.href} size="lg">
-            {primaryCta.label}
-          </ButtonLink>
-        </div>
-
         <button
           type="button"
           onClick={() => setOpen((value) => !value)}

@@ -11,8 +11,7 @@ export function SiteFooter() {
           <div className="max-w-xs">
             <Logo />
             <p className="mt-4 text-sm leading-relaxed text-forest-muted">
-              {siteConfig.tagline}. Gebaut für alle, die ihren Garten lieber
-              giessen als verwalten.
+              Für alle, die ihren Garten besser kennenlernen wollen.
             </p>
           </div>
 

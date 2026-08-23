@@ -39,11 +39,11 @@ const accents: Record<Feature["accent"], string> = {
   moss: "bg-moss text-moss-text",
 };
 
-export function Features() {
+export function Features({ as }: { as?: "h1" | "h2" } = {}) {
   return (
     <Section id="funktionen" className="bg-warm-white">
       <SectionHeading
-        as="h1"
+        as={as}
         kicker="Features"
         title="Alles, was zwischen dir und einem gesunden Garten steht"
         description={`${features.length} Bausteine, die zusammenarbeiten — statt ${features.length} Apps, die es nicht tun.`}

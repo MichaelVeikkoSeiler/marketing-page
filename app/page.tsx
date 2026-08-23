@@ -1,5 +1,5 @@
 import { Hero } from "@/components/sections/hero";
-import { FeaturesTeaser } from "@/components/sections/features-teaser";
+import { Features } from "@/components/sections/features";
 import { HowItWorks } from "@/components/sections/how-it-works";
 import { Testimonials } from "@/components/sections/testimonials";
 import { Cta } from "@/components/sections/cta";
@@ -29,7 +29,7 @@ export default function Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Hero />
-      <FeaturesTeaser />
+      <Features />
       <HowItWorks />
       <Testimonials />
       <Cta />

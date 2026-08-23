@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 export default function FeaturesPage() {
   return (
     <>
-      <Features />
+      <Features as="h1" />
       <Cta />
     </>
   );

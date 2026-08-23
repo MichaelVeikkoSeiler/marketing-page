@@ -6,14 +6,14 @@ export function Logo() {
   return (
     <Link
       href="/"
-      className="flex items-center gap-2 font-display text-lg text-forest"
+      className="flex items-center gap-2.5 font-display text-xl font-medium text-forest"
     >
       <Image
         src="/logo.png"
         alt=""
-        width={36}
-        height={36}
-        className="h-9 w-9 rounded-xl"
+        width={44}
+        height={44}
+        className="h-11 w-11 rounded-xl"
         priority
       />
       {brandMark}

@@ -12,8 +12,8 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-line/70 bg-cream/80 backdrop-blur-md">
-      <Container className="flex h-16 items-center justify-between gap-4">
+    <header className="sticky top-0 z-40 border-b border-line/70 bg-warm-white/80 backdrop-blur-md">
+      <Container className="flex h-20 items-center justify-between gap-4">
         <Logo />
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -21,7 +21,7 @@ export function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-forest-muted transition-colors hover:text-forest"
+              className="text-base font-medium text-forest-muted transition-colors hover:text-forest"
             >
               {item.label}
             </Link>
@@ -29,7 +29,9 @@ export function SiteHeader() {
         </nav>
 
         <div className="hidden md:block">
-          <ButtonLink href={primaryCta.href}>{primaryCta.label}</ButtonLink>
+          <ButtonLink href={primaryCta.href} size="lg">
+            {primaryCta.label}
+          </ButtonLink>
         </div>
 
         <button
@@ -38,12 +40,12 @@ export function SiteHeader() {
           aria-expanded={open}
           aria-controls="mobile-nav"
           aria-label={open ? "Menü schliessen" : "Menü öffnen"}
-          className="grid h-10 w-10 place-items-center rounded-xl text-forest ring-1 ring-line md:hidden"
+          className="grid h-12 w-12 place-items-center rounded-xl text-forest ring-1 ring-line md:hidden"
         >
           {open ? (
-            <X className="h-5 w-5" aria-hidden />
+            <X className="h-6 w-6" aria-hidden />
           ) : (
-            <Menu className="h-5 w-5" aria-hidden />
+            <Menu className="h-6 w-6" aria-hidden />
           )}
         </button>
       </Container>

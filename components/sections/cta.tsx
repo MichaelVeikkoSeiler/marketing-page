@@ -8,10 +8,11 @@ export function Cta() {
     <Section id="kostenlos-starten">
       <div className="rounded-card bg-forest px-8 py-16 text-center sm:px-16">
         <h2 className="text-3xl font-bold text-warm-white sm:text-4xl">
-          Die nächste Giessrunde übernimmt die App
+          Für alle, die ihren Garten besser kennenlernen wollen
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-warm-white/75">
-          Leg deine erste Zone an und sieh morgen früh, was wirklich dran ist.
+          Leg deine erste Zone an und entdecke, was in deinem Garten wirklich
+          passiert.
         </p>
         <div className="mt-9 flex justify-center">
           <ButtonLink

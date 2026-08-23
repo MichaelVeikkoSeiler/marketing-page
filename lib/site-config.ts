@@ -9,7 +9,7 @@ export const siteConfig = {
   name: "HORTTIA by Veikko",
   tagline: "lässt Wissen wachsen",
   description:
-    "HORTTIA kann deine Wissenszentrale für den Garten werden: Pflanzen per Foto erkennen, Krankheiten diagnostizieren, Standortkonflikte aufdecken, Pflegeerinnerungen an die tatsächliche Wetterlage anpassen – und mit spielerischen Funktionen ganz nebenbei das eigene Gartenwissen erweitern.",
+    "HORTTIA wird zur persönlichen Wissenszentrale für deinen Garten. Erfasse Pflanzen und Tiere, verstehe Standorte und Boden, erkenne Probleme und behalte Pflege und Wetter im Blick.",
   /** Ohne Slash am Ende. Wird für Metadata, Sitemap und OG-Tags genutzt. */
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://marketing-page-navy.vercel.app",
   /** Ziel aller "Starten"-Buttons — hier die echte App-URL eintragen. */
@@ -152,7 +152,7 @@ export const steps = [
   {
     title: "Kurz reinschauen",
     description:
-      "Die Startseite zeigt jeden Morgen, was heute dran ist. Erledigt abhaken — den Rest macht die App.",
+      "Die Startseite zeigt dir, was gerade wichtig ist — von fälliger Pflege bis zu neuen Beobachtungen in deinem Garten.",
   },
 ] as const;
 
@@ -170,7 +170,7 @@ export const testimonials = [
   },
   {
     quote:
-      "Wir teilen uns den Garten zu viert. Endlich weiss jeder, wer zuletzt gegossen hat — ohne Gruppenchat.",
+      "Wir teilen uns den Garten zu viert. Endlich wissen wir alle, was in welcher Zone steht und wer sich worum kümmert.",
     name: "Tobias M.",
     role: "Gemeinschaftsgarten Nord",
   },

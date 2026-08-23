@@ -6,14 +6,14 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Features",
   description:
-    "Alle Features von HORTTIA im Überblick: Pflanzen & Tiere, Plant Doc, Zonen-Konflikte, Bodencheck, Wetter-Integration, Foto-Journal und Garten-Quiz.",
+    "HORTTIA als Wissenszentrale für deinen Garten: alle Features im Überblick — Pflanzen & Tiere, Plant Doc, Zonen-Konflikte, Bodencheck, Wetter-Integration, Foto-Journal und Garten-Quiz.",
   alternates: {
     canonical: "/features",
   },
   openGraph: {
     title: `Features | ${siteConfig.name}`,
     description:
-      "Alle Features von HORTTIA im Überblick: Pflanzen & Tiere, Plant Doc, Zonen-Konflikte, Bodencheck, Wetter-Integration, Foto-Journal und Garten-Quiz.",
+      "HORTTIA als Wissenszentrale für deinen Garten: alle Features im Überblick — Pflanzen & Tiere, Plant Doc, Zonen-Konflikte, Bodencheck, Wetter-Integration, Foto-Journal und Garten-Quiz.",
     url: `${siteConfig.url}/features`,
   },
 };

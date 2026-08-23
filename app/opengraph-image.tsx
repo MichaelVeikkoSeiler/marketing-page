@@ -70,7 +70,8 @@ export default function Image() {
             color: "#6b7568",
           }}
         >
-          Foto-Diagnose · Zonenkonflikte · Wetterbasierte Giesserinnerungen
+          Pflanzen & Tiere erfassen · Standort & Boden verstehen · Pflege &
+          Wetter im Blick
         </div>
       </div>
     ),

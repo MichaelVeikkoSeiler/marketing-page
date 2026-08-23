@@ -46,7 +46,7 @@ export function Features({ as }: { as?: "h1" | "h2" } = {}) {
         as={as}
         kicker="Features"
         title="Alles, was zwischen dir und einem gesunden Garten steht"
-        description={`${features.length} Bausteine, die zusammenarbeiten — statt ${features.length} Apps, die es nicht tun.`}
+        description="Die Bausteine von HORTTIA arbeiten zusammen — statt einzelner Apps nebeneinander. Und weil Gartenwissen auch Spass machen darf, kannst du dein Wissen mit Quiz und Gartenspielen testen."
       />
 
       <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

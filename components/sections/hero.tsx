@@ -24,8 +24,8 @@ export function Hero() {
           </p>
 
           <h1 className="mt-6 text-4xl font-bold leading-[1.1] text-forest sm:text-5xl lg:text-6xl">
-            Dein Garten,{" "}
-            <span className="text-sage-dark">endlich im Überblick.</span>
+            Dein Garten.{" "}
+            <span className="text-sage-dark">Wissen, was darin wächst.</span>
           </h1>
 
           <p className="mt-6 text-lg leading-relaxed text-forest-muted sm:text-xl">

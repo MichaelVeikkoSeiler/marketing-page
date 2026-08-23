@@ -45,7 +45,7 @@ export function Features() {
       <SectionHeading
         as="h1"
         kicker="Funktionen"
-        title="Alles, was zwischen dir und einem gesunden Beet steht"
+        title="Alles, was zwischen dir und einem gesunden Garten steht"
         description={`${features.length} Bausteine, die zusammenarbeiten — statt ${features.length} Apps, die es nicht tun.`}
       />
 

@@ -35,6 +35,9 @@ export const secondaryCta = {
   href: "/features",
 } as const;
 
+/** Kurzform der Marke fürs Logo (Header/Footer) — ohne "by Veikko". */
+export const brandMark = "HORTTIA";
+
 export const heroBadge = "Neu: Plant Doc — Pflanzendiagnose per Foto";
 
 export type Feature = {

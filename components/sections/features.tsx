@@ -44,7 +44,7 @@ export function Features() {
     <Section id="funktionen" className="bg-warm-white">
       <SectionHeading
         as="h1"
-        kicker="Funktionen"
+        kicker="Features"
         title="Alles, was zwischen dir und einem gesunden Garten steht"
         description={`${features.length} Bausteine, die zusammenarbeiten — statt ${features.length} Apps, die es nicht tun.`}
       />

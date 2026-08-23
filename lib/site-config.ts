@@ -19,7 +19,7 @@ export const siteConfig = {
 } as const;
 
 export const mainNav = [
-  { label: "Funktionen", href: "/features" },
+  { label: "Features", href: "/features" },
   { label: "So funktioniert's", href: "/#so-gehts" },
   { label: "Stimmen", href: "/#stimmen" },
   { label: "FAQ", href: "/faq" },

@@ -9,7 +9,7 @@ export const siteConfig = {
   name: "HORTTIA by Veikko",
   tagline: "lässt Wissen wachsen",
   description:
-    "HORTTIA ist deine Wissenszentrale für den Garten: Foto-Diagnose, Zonenkonflikte erkennen, Giesserinnerungen nach echtem Wetter und ein Foto-Journal für Pflanzen und Tiere.",
+    "HORTTIA kann deine Wissenszentrale für den Garten werden: Pflanzenerkennung, Diagnose per Foto, Zonenkonflikte erkennen, Erinnerung je nach echter Wetterlage und Unterhaltung und Wissenserweiterung durch Spiele.",
   /** Ohne Slash am Ende. Wird für Metadata, Sitemap und OG-Tags genutzt. */
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://marketing-page-navy.vercel.app",
   /** Ziel aller "Starten"-Buttons — hier die echte App-URL eintragen. */

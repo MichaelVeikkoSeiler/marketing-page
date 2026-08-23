@@ -6,7 +6,7 @@ export function Logo() {
   return (
     <Link
       href="/"
-      className="flex items-center gap-3 font-display text-[29px] font-medium text-forest"
+      className="flex items-center gap-3 font-display text-[23px] font-normal tracking-normal text-forest sm:text-[25px]"
     >
       <Image
         src="/logo.png"

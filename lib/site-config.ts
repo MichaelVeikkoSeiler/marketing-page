@@ -216,7 +216,7 @@ export const faqs = [
   {
     question: "Warum ist HORTTIA entwickelt worden?",
     answer:
-      "Veikko hat die Web-App HORTTIA im Rahmen des CAS AI in Mediaproduction zum Abschluss des Pflichtmoduls Viben und Coden an der Fachhochschule Graubünden entwickelt. Wertvolle Informationen und Tipps hat er von seinen Kollegen und vor allem von Samuel Rhyner, dem Dozenten, erhalten.",
+      "Veikko hat die Web-App HORTTIA im Rahmen des CAS AI in Mediaproduction zum Abschluss des Pflichtmoduls «Viben und Coden» an der Fachhochschule Graubünden entwickelt. Wertvolle Informationen und Tipps hat er von seinen Kollegen und vor allem von Samuel Rhyner, dem Dozenten, erhalten. Herzlichen Dank an dieser Stelle Samuel :-)",
   },
 ] as const;
 

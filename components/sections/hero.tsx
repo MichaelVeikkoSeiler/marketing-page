@@ -2,12 +2,7 @@ import { Sparkles } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { ButtonLink } from "@/components/ui/button";
 import { AppPreview } from "@/components/sections/app-preview";
-import {
-  heroBadge,
-  primaryCta,
-  secondaryCta,
-  siteConfig,
-} from "@/lib/site-config";
+import { heroBadge, secondaryCta, siteConfig } from "@/lib/site-config";
 
 export function Hero() {
   return (
@@ -33,10 +28,7 @@ export function Hero() {
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
-            <ButtonLink href={primaryCta.href} size="lg">
-              {primaryCta.label}
-            </ButtonLink>
-            <ButtonLink href={secondaryCta.href} variant="secondary" size="lg">
+            <ButtonLink href={secondaryCta.href} size="lg">
               {secondaryCta.label}
             </ButtonLink>
           </div>

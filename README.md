@@ -59,9 +59,8 @@ npm run lint    # ESLint
    | Variable | Wert |
    | --- | --- |
    | `NEXT_PUBLIC_SITE_URL` | die echte Domain, ohne Slash am Ende |
-   | `NEXT_PUBLIC_APP_URL` | Ziel der „Kostenlos starten"-Buttons |
 
-   Ohne diese Werte zeigen Canonical-Tags, `sitemap.xml` und alle CTA-Buttons auf
+   Ohne diesen Wert zeigen Canonical-Tags, `sitemap.xml` und die OG-Tags auf
    `*.example`.
 3. Domain unter *Settings → Domains* verbinden.
 

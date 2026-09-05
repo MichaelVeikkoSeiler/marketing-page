@@ -5,8 +5,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { Logo } from "@/components/layout/logo";
 import { Container } from "@/components/ui/container";
-import { ButtonLink } from "@/components/ui/button";
-import { mainNav, primaryCta } from "@/lib/site-config";
+import { mainNav } from "@/lib/site-config";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -57,13 +56,6 @@ export function SiteHeader() {
                 {item.label}
               </Link>
             ))}
-            <ButtonLink
-              href={primaryCta.href}
-              size="lg"
-              className="mt-3 w-full"
-            >
-              {primaryCta.label}
-            </ButtonLink>
           </Container>
         </div>
       ) : null}

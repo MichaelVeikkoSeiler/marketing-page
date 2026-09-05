@@ -73,8 +73,12 @@ Diese Punkte sind absichtlich als Platzhalter angelegt und müssen ersetzt werde
   echte, freigegebene Zitate ersetzen oder die Section streichen — erfundene
   Kundenstimmen sind in Deutschland abmahnfähig.
 - **Impressum und Datenschutz sind Gerüste**, keine Rechtsberatung.
-- **`NEXT_PUBLIC_SITE_URL` und `NEXT_PUBLIC_APP_URL`** in Vercel setzen, sonst
-  zeigen Canonical-Tags, Sitemap und alle CTA-Buttons auf `*.example`.
+- **`NEXT_PUBLIC_SITE_URL`** in Vercel setzen, sonst zeigen Canonical-Tags,
+  Sitemap und OG-Tags auf `*.example`.
+- **Die Verlinkung zur Web-App ist deaktiviert.** Alle CTAs bleiben auf der
+  Marketing-Seite (`secondaryCta` → `/features`). Zum Reaktivieren einen
+  `primaryCta` mit App-URL in `site-config.ts` anlegen und in Hero, Cta und
+  SiteHeader einsetzen.
 - **`AppPreview`** ist ein nachgebautes Mockup. Sobald es echte Screenshots gibt,
   gegen `next/image` tauschen.
 

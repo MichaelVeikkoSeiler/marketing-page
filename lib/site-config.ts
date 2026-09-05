@@ -12,8 +12,6 @@ export const siteConfig = {
     "HORTTIA wird zur persönlichen Wissenszentrale für deinen Garten. Erfasse Pflanzen und Tiere, verstehe Standorte und Boden, erkenne Probleme und behalte Pflege und Wetter im Blick.",
   /** Ohne Slash am Ende. Wird für Metadata, Sitemap und OG-Tags genutzt. */
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://marketing-page-navy.vercel.app",
-  /** Ziel aller "Starten"-Buttons — hier die echte App-URL eintragen. */
-  appUrl: process.env.NEXT_PUBLIC_APP_URL ?? "https://veikkosgarten.vercel.app",
   locale: "de_DE",
   contactEmail: "veikko@gmx.ch",
 } as const;
@@ -25,11 +23,10 @@ export const mainNav = [
   { label: "FAQ", href: "/faq" },
 ] as const;
 
-export const primaryCta = {
-  label: "Demo ansehen",
-  href: siteConfig.appUrl,
-} as const;
-
+/**
+ * Einziger Call-to-Action der Seite. Die Verlinkung zur Web-App ist bewusst
+ * deaktiviert — alle Buttons bleiben innerhalb der Marketing-Seite.
+ */
 export const secondaryCta = {
   label: "Funktionen ansehen",
   href: "/features",

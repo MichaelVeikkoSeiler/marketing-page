@@ -11,7 +11,7 @@ const jsonLd = {
   "@type": "WebApplication",
   name: siteConfig.name,
   description: siteConfig.description,
-  url: siteConfig.appUrl,
+  url: siteConfig.url,
   applicationCategory: "LifestyleApplication",
   operatingSystem: "Web",
   offers: {
